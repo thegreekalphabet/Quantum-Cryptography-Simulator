@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Cryptography Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Quantum Crypto</div>
+            <ul class="nav-links">
+                <li><a href="#encoder">Encoder</a></li>
+                <li><a href="#decoder">Decoder</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Quantum Cryptography Simulator</h1>
+            <p>Experience secure message encryption using quantum principles</p>
+        </section>
+
+        <section id="encoder" class="crypto-section">
+            <h2>Message Encoder</h2>
+            <div class="input-area">
+                <textarea id="plaintext" placeholder="Enter your message to encrypt"></textarea>
+                <button id="encode-btn" class="action-btn">Encode Message</button>
+            </div>
+            <div class="visualization">
+                <div id="quantum-states"></div>
+                <div id="basis-choice"></div>
+                <div id="measurement"></div>
+            </div>
+            <div class="output-area">
+                <h3>Encrypted Result</h3>
+                <div id="encrypted-output" class="output-box"></div>
+                <div id="key-output" class="output-box"></div>
+            </div>
+        </section>
+
+        <section id="decoder" class="crypto-section">
+            <h2>Message Decoder</h2>
+            <div class="input-area">
+                <textarea id="encrypted-input" placeholder="Enter the encrypted message"></textarea>
+                <input type="text" id="key-input" placeholder="Enter the quantum key">
+                <button id="decode-btn" class="action-btn">Decode Message</button>
+            </div>
+            <div class="visualization">
+                <div id="decoding-process"></div>
+            </div>
+            <div class="output-area">
+                <h3>Decrypted Result</h3>
+                <div id="decrypted-output" class="output-box"></div>
+            </div>
+        </section>
+
+        <section id="about" class="info-section">
+            <h2>How It Works</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <h3>1. Quantum State Preparation</h3>
+                    <p>Random qubits are prepared in different bases (rectilinear or diagonal)</p>
+                </div>
+                <div class="step">
+                    <h3>2. Quantum Transmission</h3>
+                    <p>Qubits are transmitted and measured in random bases</p>
+                </div>
+                <div class="step">
+                    <h3>3. Key Sifting</h3>
+                    <p>Matching basis measurements are kept to form the secure key</p>
+                </div>
+                <div class="step">
+                    <h3>4. Message Encryption</h4>
+                    <p>The generated key is used to encrypt and decrypt messages</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About This Project</h4>
+                <p>An educational tool demonstrating quantum cryptography principles</p>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="#">Quantum Cryptography Guide</a>
+                <a href="#">BB84 Protocol</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Quantum Crypto Simulator. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
